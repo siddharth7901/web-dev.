@@ -1,18 +1,30 @@
 <html>
-  <head>
-    <tittle>create a website</tittle>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="banner"></div>
-    <div class="navbar">
-      <img src="logo.jpg" class="logo" />
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">our team</a></li>
-        <li><a href="#">contact us</a></li>
-      </ul>
+
+<head>
+  <title>create a website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- logo element is the child of the body element -->
+  <div class="logo"> 
+    <!-- Using this div as a background the image and other behaviour is controlled by the css logo class -->
+<br/>
+<br/>
+<!-- We are using br tags for crating a space between top and navbar 
+although we can use css for same purpose and we should not use br tag like this butttt sometimes its okie    -->
+<div class="navbar">  <!-- Navbar element is the chid of the logo element -->
+  
+<!-- Instead of unordered List ul we are using div here cause its way easier to manipulate div -->
+
+        <a class="active" href="#">Home</a>
+        <!-- all the a tags are child of navbar element -->
+        <a href="#">about</a></li>
+        <a href="#">our team</a>
+        <a href="#">contact us</a>
     </div>
-  </body>
+
+  </div>
+</body>
+
 </html>

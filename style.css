@@ -3,6 +3,7 @@
   padding: 0;
   font-family: sans-serif;
 }
+
 .banner {
   width: 1200;
   height: 100vh;
@@ -11,11 +12,67 @@
   background-size: cover;
   background-position: center;
 }
-.navvbar {
+
+.navbar {
+  font-size: 1.5rem;
+  color: black !important;
+  background-color: green;
+  margin: 25px auto 25px auto;
   width: 85%;
-  margin: auto;
-  padding: 35px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: 50px;
+  background-color: #333;
+  overflow: hidden;
+
 }
+
+.navbar a {
+  /* This navbar a means all the elements that are inside of the class navbar 
+  will have these css properties applied to them by this way we dont need to give evey 
+  element a class specifically */
+  
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+
+
+ }
+
+
+ .navbar .active{
+/* this is instructing the css to apply these properties to the 
+navbar elements child which have active class */
+
+background-color: #000;
+color: white;
+
+ }
+
+.navbar a:hover{
+/* 
+:hover is used to app;y effect it means whenever user will bring his mouse over the navbar elements 
+well' change the background to white and text to black */
+
+
+
+
+background-color:white;
+
+color:black
+
+}
+
+.logo {
+  min-height: 100vh;
+  background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+/* 
+The no repeat command make sure that the background image is not repeated and stays in the place */
+/* min height is 100vh vh means viewport height  the white area we see when we load the website.
+   */
+
+}
+
